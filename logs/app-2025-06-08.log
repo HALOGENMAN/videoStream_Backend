@@ -5,3 +5,70 @@
 {"level":"info","message":"::1 - - [08/Jun/2025:10:16:58 +0000] \"GET /favicon.ico HTTP/1.1\" 404 45 \"http://localhost:5000/\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36\"","timestamp":"2025-06-08 15:46:58"}
 {"level":"error","message":"Path not found: GET /","timestamp":"2025-06-08 15:49:31"}
 {"level":"info","message":"::1 - - [08/Jun/2025:10:19:31 +0000] \"GET / HTTP/1.1\" 404 45 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36\"","timestamp":"2025-06-08 15:49:31"}
+{"level":"info","message":"::1 - - [08/Jun/2025:10:44:21 +0000] \"GET /api/v1/user HTTP/1.1\" 200 54 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36\"","timestamp":"2025-06-08 16:14:21"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Jun/2025:10:46:53 +0000] \"GET /api/v1/user HTTP/1.1\" 200 54 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-06-08 16:16:53"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Jun/2025:10:54:04 +0000] \"GET /api/v1/user HTTP/1.1\" 200 54 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-06-08 16:24:04"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Jun/2025:10:54:05 +0000] \"GET /api/v1/user HTTP/1.1\" 200 54 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-06-08 16:24:05"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Jun/2025:11:08:45 +0000] \"POST /api/v1/user HTTP/1.1\" 500 1436 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-06-08 16:38:45"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Jun/2025:11:10:01 +0000] \"POST /api/v1/user HTTP/1.1\" 500 1436 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-06-08 16:40:01"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Jun/2025:11:11:43 +0000] \"POST /api/v1/user HTTP/1.1\" 500 1436 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-06-08 16:41:43"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Jun/2025:11:12:53 +0000] \"POST /api/v1/user HTTP/1.1\" 201 94 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-06-08 16:42:53"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Jun/2025:11:15:11 +0000] \"POST /api/v1/user HTTP/1.1\" 201 150 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-06-08 16:45:11"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Jun/2025:11:15:49 +0000] \"POST /api/v1/user HTTP/1.1\" 500 1436 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-06-08 16:45:49"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Jun/2025:11:18:11 +0000] \"POST /api/v1/user HTTP/1.1\" 500 1436 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-06-08 16:48:11"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Jun/2025:11:18:54 +0000] \"POST /api/v1/user HTTP/1.1\" 500 1436 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-06-08 16:48:54"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Jun/2025:11:19:21 +0000] \"POST /api/v1/user HTTP/1.1\" 500 1436 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-06-08 16:49:21"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Jun/2025:11:20:40 +0000] \"POST /api/v1/user HTTP/1.1\" 500 1436 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-06-08 16:50:40"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Jun/2025:11:21:53 +0000] \"POST /api/v1/user HTTP/1.1\" 500 1436 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-06-08 16:51:53"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Jun/2025:11:22:33 +0000] \"POST /api/v1/user HTTP/1.1\" 500 83 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-06-08 16:52:33"}
+{"level":"error","message":"Error occurred: This is a test error + POST + /api/v1/user","timestamp":"2025-06-08 16:53:05"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Jun/2025:11:23:05 +0000] \"POST /api/v1/user HTTP/1.1\" 500 83 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-06-08 16:53:05"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Jun/2025:11:23:53 +0000] \"POST /api/v1/user HTTP/1.1\" 201 235 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-06-08 16:53:53"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Jun/2025:11:31:40 +0000] \"POST /api/v1/user HTTP/1.1\" 201 288 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-06-08 17:01:40"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Jun/2025:11:35:54 +0000] \"GET /api/v1/user HTTP/1.1\" 200 400 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-06-08 17:05:54"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Jun/2025:11:40:08 +0000] \"GET /api/v1/user/1 HTTP/1.1\" 200 211 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-06-08 17:10:08"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Jun/2025:11:40:17 +0000] \"GET /api/v1/user/2 HTTP/1.1\" 200 214 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-06-08 17:10:17"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Jun/2025:11:40:19 +0000] \"GET /api/v1/user/2 HTTP/1.1\" 200 214 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-06-08 17:10:19"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Jun/2025:11:40:27 +0000] \"GET /api/v1/user/2 HTTP/1.1\" 200 214 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-06-08 17:10:27"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Jun/2025:11:41:17 +0000] \"GET /api/v1/user?local=http://localhost:5000/api/v1 HTTP/1.1\" 200 400 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-06-08 17:11:17"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Jun/2025:11:41:18 +0000] \"GET /api/v1/user?local=http://localhost:5000/api/v1 HTTP/1.1\" 200 400 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-06-08 17:11:18"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Jun/2025:11:41:19 +0000] \"GET /api/v1/user?local=http://localhost:5000/api/v1 HTTP/1.1\" 200 400 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-06-08 17:11:19"}
+{"level":"error","message":"Path not found: POST /api/v1/user","timestamp":"2025-06-08 17:47:27"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Jun/2025:12:17:27 +0000] \"POST /api/v1/user HTTP/1.1\" 404 45 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-06-08 17:47:27"}
+{"level":"error","message":"Path not found: POST /api/v1/user","timestamp":"2025-06-08 17:47:31"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Jun/2025:12:17:31 +0000] \"POST /api/v1/user HTTP/1.1\" 404 45 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-06-08 17:47:31"}
+{"level":"error","message":"Path not found: POST /api/v1/user","timestamp":"2025-06-08 17:47:47"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Jun/2025:12:17:47 +0000] \"POST /api/v1/user HTTP/1.1\" 404 45 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-06-08 17:47:47"}
+{"level":"error","message":"Path not found: POST /api/v1/user","timestamp":"2025-06-08 17:47:48"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Jun/2025:12:17:48 +0000] \"POST /api/v1/user HTTP/1.1\" 404 45 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-06-08 17:47:48"}
+{"level":"error","message":"Error occurred: Validation error + POST + /api/v1/user","timestamp":"2025-06-08 17:49:08"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Jun/2025:12:19:08 +0000] \"POST /api/v1/user HTTP/1.1\" 500 79 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-06-08 17:49:08"}
+{"level":"error","message":"Path not found: GET /api/v1/auth/login","timestamp":"2025-06-08 18:29:30"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Jun/2025:12:59:30 +0000] \"GET /api/v1/auth/login HTTP/1.1\" 404 45 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-06-08 18:29:30"}
+{"level":"error","message":"Error occurred: WHERE parameter \"email\" has invalid \"undefined\" value + POST + /api/v1/auth/login","timestamp":"2025-06-08 18:30:36"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Jun/2025:13:00:36 +0000] \"POST /api/v1/auth/login HTTP/1.1\" 500 120 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-06-08 18:30:36"}
+{"level":"info","message":"User with email sskm@gmail.com logged in successfully","timestamp":"2025-06-08 18:30:55"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Jun/2025:13:00:55 +0000] \"POST /api/v1/auth/login HTTP/1.1\" 200 136 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-06-08 18:30:55"}
+{"level":"info","message":"User with email sskm@gmail.com logged in successfully","timestamp":"2025-06-08 18:41:11"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Jun/2025:13:11:11 +0000] \"POST /api/v1/auth/login HTTP/1.1\" 200 338 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-06-08 18:41:11"}
+{"level":"error","message":"Error occurred: Cannot read properties of undefined (reading 'error') + PUT + /api/v1/user/2","timestamp":"2025-06-08 19:11:18"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Jun/2025:13:41:18 +0000] \"PUT /api/v1/user/2 HTTP/1.1\" 500 116 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-06-08 19:11:18"}
+{"level":"error","message":"Error occurred: Cannot read properties of undefined (reading 'error') + PUT + /api/v1/user/2","timestamp":"2025-06-08 19:12:34"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Jun/2025:13:42:34 +0000] \"PUT /api/v1/user/2 HTTP/1.1\" 500 116 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-06-08 19:12:34"}
+{"level":"error","message":"Error occurred: Invalid token + PUT + /api/v1/user/2","timestamp":"2025-06-08 19:13:12"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Jun/2025:13:43:12 +0000] \"PUT /api/v1/user/2 HTTP/1.1\" 500 76 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-06-08 19:13:12"}
+{"level":"error","message":"Error occurred: Cannot read properties of undefined (reading 'error') + PUT + /api/v1/user/2","timestamp":"2025-06-08 19:13:28"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Jun/2025:13:43:28 +0000] \"PUT /api/v1/user/2 HTTP/1.1\" 500 116 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-06-08 19:13:28"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Jun/2025:13:44:22 +0000] \"PUT /api/v1/user/2 HTTP/1.1\" 200 288 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-06-08 19:14:22"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Jun/2025:13:44:42 +0000] \"PUT /api/v1/user/2 HTTP/1.1\" 200 284 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-06-08 19:14:42"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Jun/2025:13:46:55 +0000] \"PUT /api/v1/user/1 HTTP/1.1\" 200 231 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-06-08 19:16:55"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Jun/2025:13:48:48 +0000] \"GET /api/v1/user/1 HTTP/1.1\" 200 207 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-06-08 19:18:48"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Jun/2025:13:49:01 +0000] \"GET /api/v1/user?local=http://localhost:5000/api/v1 HTTP/1.1\" 200 392 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-06-08 19:19:01"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Jun/2025:13:49:02 +0000] \"GET /api/v1/user?local=http://localhost:5000/api/v1 HTTP/1.1\" 200 392 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-06-08 19:19:02"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Jun/2025:13:49:03 +0000] \"GET /api/v1/user?local=http://localhost:5000/api/v1 HTTP/1.1\" 200 392 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-06-08 19:19:03"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Jun/2025:13:50:07 +0000] \"DELETE /api/v1/user/1 HTTP/1.1\" 204 - \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-06-08 19:20:07"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Jun/2025:13:50:16 +0000] \"GET /api/v1/user?local=http://localhost:5000/api/v1 HTTP/1.1\" 200 212 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-06-08 19:20:16"}
+{"level":"error","message":"Error occurred: Cannot read properties of undefined (reading 'error') + DELETE + /api/v1/user/1","timestamp":"2025-06-08 19:21:15"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Jun/2025:13:51:15 +0000] \"DELETE /api/v1/user/1 HTTP/1.1\" 500 116 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-06-08 19:21:15"}
+{"level":"error","message":"Error occurred: User not found + DELETE + /api/v1/user/1","timestamp":"2025-06-08 19:22:29"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Jun/2025:13:52:29 +0000] \"DELETE /api/v1/user/1 HTTP/1.1\" 500 77 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2025-06-08 19:22:29"}
