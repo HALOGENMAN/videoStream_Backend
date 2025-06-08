@@ -1,0 +1,7 @@
+{"level":"info","message":"::1 - - [08/Jun/2025:10:15:54 +0000] \"GET / HTTP/1.1\" 500 1397 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36\"","timestamp":"2025-06-08 15:45:54"}
+{"level":"error","message":"Path not found: GET /","timestamp":"2025-06-08 15:46:58"}
+{"level":"info","message":"::1 - - [08/Jun/2025:10:16:58 +0000] \"GET / HTTP/1.1\" 404 45 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36\"","timestamp":"2025-06-08 15:46:58"}
+{"level":"error","message":"Path not found: GET /favicon.ico","timestamp":"2025-06-08 15:46:58"}
+{"level":"info","message":"::1 - - [08/Jun/2025:10:16:58 +0000] \"GET /favicon.ico HTTP/1.1\" 404 45 \"http://localhost:5000/\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36\"","timestamp":"2025-06-08 15:46:58"}
+{"level":"error","message":"Path not found: GET /","timestamp":"2025-06-08 15:49:31"}
+{"level":"info","message":"::1 - - [08/Jun/2025:10:19:31 +0000] \"GET / HTTP/1.1\" 404 45 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36\"","timestamp":"2025-06-08 15:49:31"}
