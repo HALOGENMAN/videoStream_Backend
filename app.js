@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
 const morgan = require('morgan');
+const cors = require('cors'); 
 
 // const { databaseConn } = require('./src/utils/db');
 const sequelize = require('./src/utils/db');
@@ -17,6 +18,7 @@ const app = express();
 dotenv.config();
 app.use(express.json());
 app.use(commonHeadders);
+app.use(cors());
 
 app.use(
   morgan('combined', {
