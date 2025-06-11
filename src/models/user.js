@@ -2,8 +2,7 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('../utils/db');
 const bcrypt = require('bcrypt');
-const { generateToken } = require('../utils/jwt'); // Assuming you have a JWT utility for token generation
-
+const { generateToken , generateRefreshToken} = require('../utils/jwt'); // Assuming you have a JWT utility for token generation
 const User = sequelize.define('User', {
   id: {
     type: DataTypes.INTEGER,
@@ -53,6 +52,14 @@ User.prototype.validatePassword = async function (password) {
 
 User.prototype.getToken = function () {
   return generateToken({
+    email: this.email,
+    id: this.id,
+    role: this.role   
+  })
+}
+
+User.prototype.getRefreshToken = function () {
+  return generateRefreshToken({
     email: this.email,
     id: this.id,
     role: this.role   

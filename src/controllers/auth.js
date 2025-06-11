@@ -1,5 +1,7 @@
 const logger = require('../utils/logger');
 const User = require('../models/user');
+const RefreshToken = require('../models/refreshToken');
+const { verifyRefreshToken } = require('../utils/jwt');
 
 exports.login = async (req, res, next) => {
   try{
@@ -21,6 +23,21 @@ exports.login = async (req, res, next) => {
       });
     }
 
+    console.log('=====================')
+
+    await RefreshToken.destroy({
+      where: { userId: user.id }
+    });
+
+    const refreshToken = user.getRefreshToken();
+
+    await RefreshToken.create({
+      token: refreshToken,
+      userId: user.id
+    });
+
+    console.log(`=====================Generated refresh token for user with email ${email}: ${refreshToken}`);
+
     logger.info(`User with email ${email} logged in successfully`);
     res.status(200).json({
       status: 'success',
@@ -31,7 +48,8 @@ exports.login = async (req, res, next) => {
         lastName: user.lastName,
         email: user.email,
         role: user.role,
-        token: user.getToken(), // Assuming getToken is a method on the User model that generates a JWT
+        token: user.getToken(),
+        refreshToken: refreshToken // Include the refresh token in the response
       },
     });
     
@@ -40,3 +58,31 @@ exports.login = async (req, res, next) => {
   }
   
 }
+
+exports.refreshToken = async (req, res, next) => {
+  try {
+    const { token } = req.body;
+    if (!token) {
+      return res.status(400).json({
+        status: 'error',
+        message: 'Refresh token is required',
+      });
+    }
+
+    payload = verifyRefreshToken(token);
+
+    let user = await User.findByPk(payload.id);
+    if (!user) {
+      return res.status(401).json({
+        status: 'error',
+        message: 'User not found',
+      });
+    }
+    res.status(200).json({
+      status: 'success',
+      newToken: user.getToken() // Replace with actual token generation logic
+    });
+  } catch (error) {
+    next(error);
+  }
+};
