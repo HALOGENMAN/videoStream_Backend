@@ -15,4 +15,6 @@ const RefreshToken = sequelize.define('RefreshToken', {
   timestamps: false 
 })
 
+
+
 module.exports = RefreshToken;

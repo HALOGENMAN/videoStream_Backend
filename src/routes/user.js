@@ -1,5 +1,6 @@
   const { getAllUsers ,createUser,getUserById, updateUser, deleteUser,routeCheckForUserUpdateAndDelete} = require('../controllers/user');
   const { check, param ,validationResult } = require('express-validator');
+  const {verifyToken} = require('../utils/jwt');
 
   module.exports = (route) => {
     return route.get('/',getAllUsers)
@@ -13,8 +14,8 @@
           ],getUserById)
           .put('/:id',[
             param('id').isInt().withMessage('User ID must be an integer'),
-          ],routeCheckForUserUpdateAndDelete,updateUser)
+          ],verifyToken,routeCheckForUserUpdateAndDelete,updateUser)
           .delete('/:id',[
             param('id').isInt().withMessage('User ID must be an integer'),
-          ],routeCheckForUserUpdateAndDelete,deleteUser);
+          ],verifyToken,routeCheckForUserUpdateAndDelete,deleteUser);
   }
