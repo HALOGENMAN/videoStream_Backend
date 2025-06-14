@@ -1,6 +1,5 @@
 const User = require('../models/user');
 const { logger } = require('../utils/logger');
-const { verifyToken } = require('../utils/jwt');
 
 exports.getAllUsers = async (req, res,next) => {
   try{
@@ -86,11 +85,10 @@ exports.deleteUser = async (req, res, next) => {
   }
 }
 
+
 exports.routeCheckForUserUpdateAndDelete = async (req, res, next) => {
   try {
-    const token = req.headers['authorization'];
-    const payload = verifyToken(token);
-
+    const payload = req.payload;
     if(payload.role !== 'admin') {
       next();
       return;

@@ -9,7 +9,7 @@ exports.login = async (req, res, next) => {
     const user = await User.findOne({ where: { email } });
     if (!user) {
       logger.error(`Login failed: User with email ${email} not found`);
-      return res.status(401).json({
+      return res.status(402).json({
         status: 'error',
         message: 'Invalid email or password',
       });
@@ -17,13 +17,12 @@ exports.login = async (req, res, next) => {
     const isPasswordValid = await user.validatePassword(password);
     if (!isPasswordValid) {
       logger.error(`Login failed: Invalid password for user with email ${email}`);
-      return res.status(401).json({
+      return res.status(402).json({
         status: 'error',
         message: 'Invalid email or password',
       });
     }
 
-    console.log('=====================')
 
     await RefreshToken.destroy({
       where: { userId: user.id }
@@ -35,8 +34,6 @@ exports.login = async (req, res, next) => {
       token: refreshToken,
       userId: user.id
     });
-
-    console.log(`=====================Generated refresh token for user with email ${email}: ${refreshToken}`);
 
     logger.info(`User with email ${email} logged in successfully`);
     res.status(200).json({
@@ -63,14 +60,22 @@ exports.refreshToken = async (req, res, next) => {
   try {
     const { token } = req.body;
     if (!token) {
-      return res.status(400).json({
-        status: 'error',
-        message: 'Refresh token is required',
-      });
+      return next(new Error('Refresh token is required'));
     }
 
     payload = verifyRefreshToken(token);
 
+    RefreshToken.findOne({
+      where: { token, userId: payload.id }
+    }).then(async (refreshToken) => {
+      if (!refreshToken) {
+        return res.status(401).json({
+          status: 'error',
+          message: 'Invalid refresh token',
+        });
+      }
+    });
+    
     let user = await User.findByPk(payload.id);
     if (!user) {
       return res.status(401).json({
@@ -78,6 +83,7 @@ exports.refreshToken = async (req, res, next) => {
         message: 'User not found',
       });
     }
+
     res.status(200).json({
       status: 'success',
       newToken: user.getToken() // Replace with actual token generation logic

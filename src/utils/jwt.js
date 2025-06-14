@@ -2,7 +2,7 @@ const jwt = require('jsonwebtoken');
 
 exports.generateToken = (payload) => {
   return jwt.sign(payload, process.env.JWT_SECRET_KEY, {
-    expiresIn: process.env.JWT_EXPIRATION || '1h'
+    expiresIn: process.env.JWT_EXPIRATION_TIME
   });
 }; 
 
@@ -12,15 +12,23 @@ exports.generateRefreshToken = (payload) => {
   });
 }; 
 
-exports.verifyToken = (token) => {
+exports.verifyToken = (req,res,next) => {
   try {
+    let token = req.headers['authorization']; 
+    
     if (!token || !token.startsWith('Bearer ')) {
-      return new Error('Token is missing or malformed');
+      return next(new Error('Token is missing or malformed'))
     }
     token = token.split(' ')[1];
-    return jwt.verify(token, process.env.JWT_SECRET_KEY);
+    let payload =  jwt.verify(token, process.env.JWT_SECRET_KEY);
+
+    req.payload = payload;
+    next();
   } catch (error) {
-    throw new Error('Invalid token');
+    return res.status(401).json({
+      status: 'error',
+      message: 'Invalid token'
+    });
   }
 }
 
